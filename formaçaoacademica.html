@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Eduardo - Quem sou</title>
+    <style>
+        body {
+            margin-left: 50px;
+            margin-right:50px;
+            font-family: Arial, sans-serif; /* Define uma fonte padrão para o corpo */
+            background-color:black;
+        }
+       .wrapper {
+            background-color:rgb(51, 45, 45); /* Define uma cor de fundo com transparência para a margem */
+            padding-top: 5px; /* Aumenta o padding para compensar a margem */
+            padding-left: 5px;
+        }
+        
+        /* Grid Container */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        /* Header */
+        header {
+            grid-column: 1 / -1; /* Ocupa todas as colunas */
+            /* background-color: rgba(7, 2, 2, 0.842); */
+            padding: 20px 0; /* Adiciona espaço interno ao cabeçalho */
+        }
+
+        /* Menu */
+        .menu {
+            grid-column: 6 / -1; /* Começa na 6ª coluna e ocupa o restante */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0; /* Adiciona espaço interno ao menu */
+            background-color: rgba(7, 2, 2, 0.842); /* Cor de fundo para melhor legibilidade */
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            display: inline;
+            padding: 80px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px none rgb(248, 101, 33);
+            color: rgb(248, 101, 33);
+        }
+
+        .menu a:hover {
+            background-color: rgb(248, 101, 33);
+            color: white;
+        }
+
+        /* Main Content */
+        .principal {
+            grid-column: 2 / -1;
+            padding: 0 15px; /* Adiciona espaçamento apenas nos lados */
+            text-align: justify;
+        }
+        .imagem_lucas{
+            color: white;
+        }
+        .principal{
+            color:white;
+        }
+    
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            background-color: rgba(7, 2, 2, 0.842);
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Adiciona espaço interno ao rodapé */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="quemsou.html">Quem sou</a></li>
+            <li><a href="formaçaoacademica.html">Formação acadêmica</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Conteúdo principal -->
+    <div class="container wrapper">
+        <!-- Informações do usuário -->
+        <aside class="imagem_lucas">
+            <img src="imagens/imagem portifolio.jpg" alt="Foto de Lucas Eduardo" width="200" height="200">
+            <div class="infos">
+                <!-- Informações pessoais -->
+                <p><strong>Ocupação:</strong> Estudante</p>
+                <p><strong>Curso:</strong> Análise e desenvolvimento de sistemas</p>
+                <p><strong>Instituição:</strong> Centro Universitário Internacional Uninter</p>
+                <p><strong>Data de Nascimento:</strong> 21/11/1994</p>
+            </div>
+        </aside>
+        <!-- Seção principal -->
+        <section class="principal">
+            <!-- Título -->
+            <h1>Formação Acadêmica</h1>
+            <!-- Parágrafos -->
+            <p>Atualmente, estou dedicado aos estudos de Análise e Desenvolvimento de Sistemas, onde busco aprimorar minhas habilidades e conhecimentos na área da tecnologia. Desde cedo, desenvolvi um interesse apaixonado pela informática, iniciando minha jornada com cursos de informática. Aprendi a operar o Windows e os aplicativos do Microsoft Office, o que me proporcionou uma boa base</p>
+            <p>Com o tempo, meu entusiasmo pela área cresceu, levando-me a explorar mais a fundo o mundo do web design. Fiz cursos de Web Designer, onde adquiri habilidades em ferramentas como Corel Draw, Photoshop e Flash. Durante esse período, criei pequenas animações e desenvolvi projetos criativos, consolidando minha paixão pela área.</p>
+            <p>Também retomei as aulas de inglês para que eu possa me aprimorar neste idioma.</p>
+            <p>Decidi, então, retomar minha jornada acadêmica para expandir ainda mais meu conhecimento e explorar novos horizontes na área de tecnologia. Estou ansioso para continuar minha formação e enfrentar desafios empolgantes que me permitam crescer e contribuir de forma significativa para o mundo da tecnologia.</p>
+        </section>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024<br>Lucas Eduardo.<br>Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

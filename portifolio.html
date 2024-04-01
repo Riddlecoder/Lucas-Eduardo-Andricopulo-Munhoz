@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Eduardo - Quem sou</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: Arial, sans-serif; /* Define uma fonte padrão para o corpo */
+            background-color: black; /* Cor de fundo do corpo */
+        }
+        
+        /* Estilos para a margem ao redor do conteúdo */
+        .wrapper {
+            background-color: rgb(51, 45, 45); /* Define uma cor de fundo para a margem */
+            padding-top: 5px; /* Aumenta o padding para compensar a margem */
+            padding-left: 5px;
+        }
+        
+        /* Estilos para o layout em grade */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /* Define 12 colunas iguais */
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            grid-column: 1 / -1; /* Ocupa todas as colunas */
+            padding: 20px 0; /* Adiciona espaço interno ao cabeçalho */
+        }
+     
+        /* Estilos para o menu de navegação */
+        .menu {
+            grid-column: 6 / -1; /* Começa na 6ª coluna e ocupa o restante */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0; /* Adiciona espaço interno ao menu */
+            background-color: rgba(7, 2, 2, 0.842); /* Cor de fundo para melhor legibilidade */
+            margin-bottom: 20px; /* Margem inferior */
+        }
+
+        /* Estilos para os itens do menu */
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            display: inline;
+            padding: 80px; /* Espaçamento interno */
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px none rgb(248, 101, 33);
+            color: rgb(248, 101, 33);
+        }
+
+        .menu a:hover {
+            background-color: rgb(248, 101, 33);
+            color: white;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .principal {
+            grid-column: 2 / -1; /* Começa na 2ª coluna e ocupa o restante */
+            padding: 0 15px; /* Adiciona espaçamento apenas nos lados */
+            text-align: justify; /* Texto justificado */
+        }
+
+        /* Estilos para a imagem e informações pessoais */
+        .imagem_lucas {
+            color: white;
+        }
+
+        /* Estilos para o texto principal */
+        .principal {
+            color: white;
+        }
+    
+        /* Estilos para o título principal */
+        h1 {
+            font-size: 32px; /* Tamanho da fonte */
+            grid-column: 3 / 10; /* Colunas ocupadas */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            text-align: center; /* Texto centralizado */
+            margin-bottom: 80px; /* Margem inferior */
+        }
+        
+        /* Estilos para o subtítulo */
+        h2 {
+            grid-column: 3 / 10;
+            margin: 0 auto; 
+            text-align: center; 
+            margin-bottom: 80px;
+        } 
+    
+        /* Estilos para o parágrafo */
+        .pp1 {
+            grid-column: 3 / 10;
+            margin: 0 auto; 
+            text-align: center; 
+            margin-bottom: 80px;
+        }
+    
+        /* Estilos para o contêiner de vídeo */
+        .video-container {
+            grid-column: 3 / 7; /* Colunas ocupadas */
+            place-items: center; /* Centraliza os vídeos tanto horizontal quanto verticalmente */
+            display: flex;
+            align-items: center; /* Centraliza os itens verticalmente */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+        }
+        
+        /* Estilos para o rodapé */
+        footer {
+            grid-column: 1 / 13; /* Ocupa todas as colunas */
+            background-color: rgba(7, 2, 2, 0.842); /* Cor de fundo do rodapé */
+            color: white; /* Cor do texto */
+            text-align: center; /* Texto centralizado */
+            padding: 20px 0; /* Espaçamento interno */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="quemsou.html">Quem sou</a></li>
+            <li><a href="formaçaoacademica.html">Formação acadêmica</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Conteúdo principal -->
+    <div class="container wrapper">
+        <!-- Informações pessoais -->
+        <aside class="imagem_lucas">
+            <img src="imagens/imagem portifolio.jpg" alt="Foto de Lucas Eduardo" width="200" height="200">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Estudante</p>
+                <p><strong>Curso:</strong> Análise e desenvolvimento de sistemas </p>
+                <p><strong>Instituição:</strong> Centro Universitário Internacional Uninter</p>
+                <p><strong>Data de Nascimento:</strong> 21/11/1994 </p>
+            </div>
+        </aside>
+        
+        <!-- Título principal -->
+        <section class="principal">
+            <div class="container">
+                <h1>Portifólio</h1> 
+                <h2>Criando e editando videos com IA e outras ferramentas</h2>
+                <p class="pp1">Aqui criei dois videos, o primeiro se trata de uma vinheta e o segundo de uma campanha de maquiagem, os dois feitos por ias e outras ferramentas de edição de video</p>
+            </div>
+            
+            <!-- Contêiner para os vídeos -->
+            <div class="video-container">    
+                <video width="340" height="160" controls>
+                    <source src="videos/Vinheta para canal.mp4">
+                </video>
+                <video width="340" height="160" controls>
+                    <source src="videos/campanha de maquiagem.mp4">
+                </video>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 <br> Lucas Eduardo. <br> Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
